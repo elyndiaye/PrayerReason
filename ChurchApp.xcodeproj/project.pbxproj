@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		670B739B2D11976900126416 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670B739A2D11976900126416 /* LoginView.swift */; };
+		670B739D2D11979100126416 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670B739C2D11979100126416 /* HeaderView.swift */; };
+		676376522D0FD597002EA6ED /* ChurchAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676376512D0FD597002EA6ED /* ChurchAppApp.swift */; };
+		676376542D0FD597002EA6ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676376532D0FD597002EA6ED /* ContentView.swift */; };
+		676376562D0FD59B002EA6ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676376552D0FD59B002EA6ED /* Assets.xcassets */; };
+		676376592D0FD59B002EA6ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676376582D0FD59B002EA6ED /* Preview Assets.xcassets */; };
+		676376672D0FDB3C002EA6ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 676376662D0FDB3B002EA6ED /* GoogleService-Info.plist */; };
+		678A7B1F2D13150700776D6F /* ProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678A7B1E2D13150700776D6F /* ProfileButton.swift */; };
+		679079B42D145A860051E593 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679079B32D145A860051E593 /* RegisterViewModel.swift */; };
+		679AFD3A2D1496C70091E038 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679AFD392D1496C70091E038 /* Extensions.swift */; };
+		679AFD3C2D149AD70091E038 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679AFD3B2D149AD70091E038 /* MainViewModel.swift */; };
+		679AFD402D149FEE0091E038 /* PrayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679AFD3F2D149FEE0091E038 /* PrayListView.swift */; };
+		679AFD422D14BFB30091E038 /* PrayListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679AFD412D14BFB30091E038 /* PrayListViewModel.swift */; };
+		67A3F9022D16177B00C0A458 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67A3F9012D16177B00C0A458 /* Launch Screen.storyboard */; };
+		67B1AB6F2D150D6E006D6D41 /* PrayListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B1AB6E2D150D6E006D6D41 /* PrayListItemViewModel.swift */; };
+		67B1AB712D150FC0006D6D41 /* PrayListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B1AB702D150FC0006D6D41 /* PrayListItemView.swift */; };
+		67B1AB732D15189B006D6D41 /* NewItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B1AB722D15189B006D6D41 /* NewItemViewModel.swift */; };
+		67B1F3432D121EA900D3BEFB /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B1F3422D121EA800D3BEFB /* RegisterView.swift */; };
+		67E0A36D2D138D7B00B3B72D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 67E0A36C2D138D7B00B3B72D /* FirebaseAuth */; };
+		67E0A36F2D138D7B00B3B72D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 67E0A36E2D138D7B00B3B72D /* FirebaseFirestore */; };
+		67E0A3712D138D7C00B3B72D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 67E0A3702D138D7B00B3B72D /* FirebaseFirestoreSwift */; };
+		67E0A3732D13D40200B3B72D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E0A3722D13D40200B3B72D /* LoginViewModel.swift */; };
+		67F8F10F2D0FEB7300138237 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F8F10E2D0FEB7300138237 /* ProfileView.swift */; };
+		67F8F1112D0FEC2800138237 /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F8F1102D0FEC2800138237 /* NewItemView.swift */; };
+		67F8F1132D0FED2400138237 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F8F1122D0FED2400138237 /* User.swift */; };
+		67F8F1152D0FED3800138237 /* PrayListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F8F1142D0FED3800138237 /* PrayListItem.swift */; };
+		67F8F1172D0FED8000138237 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F8F1162D0FED8000138237 /* ProfileViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		670B739A2D11976900126416 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		670B739C2D11979100126416 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		6763764E2D0FD597002EA6ED /* ChurchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChurchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		676376512D0FD597002EA6ED /* ChurchAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChurchAppApp.swift; sourceTree = "<group>"; };
+		676376532D0FD597002EA6ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		676376552D0FD59B002EA6ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		676376582D0FD59B002EA6ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		676376662D0FDB3B002EA6ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		678A7B1E2D13150700776D6F /* ProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButton.swift; sourceTree = "<group>"; };
+		679079B32D145A860051E593 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		679AFD392D1496C70091E038 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		679AFD3B2D149AD70091E038 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		679AFD3F2D149FEE0091E038 /* PrayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayListView.swift; sourceTree = "<group>"; };
+		679AFD412D14BFB30091E038 /* PrayListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayListViewModel.swift; sourceTree = "<group>"; };
+		67A3F9012D16177B00C0A458 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		67B1AB6E2D150D6E006D6D41 /* PrayListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayListItemViewModel.swift; sourceTree = "<group>"; };
+		67B1AB702D150FC0006D6D41 /* PrayListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayListItemView.swift; sourceTree = "<group>"; };
+		67B1AB722D15189B006D6D41 /* NewItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewModel.swift; sourceTree = "<group>"; };
+		67B1F3422D121EA800D3BEFB /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		67E0A3722D13D40200B3B72D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		67F8F10E2D0FEB7300138237 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		67F8F1102D0FEC2800138237 /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
+		67F8F1122D0FED2400138237 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		67F8F1142D0FED3800138237 /* PrayListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayListItem.swift; sourceTree = "<group>"; };
+		67F8F1162D0FED8000138237 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6763764B2D0FD597002EA6ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67E0A36D2D138D7B00B3B72D /* FirebaseAuth in Frameworks */,
+				67E0A36F2D138D7B00B3B72D /* FirebaseFirestore in Frameworks */,
+				67E0A3712D138D7C00B3B72D /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		676376452D0FD597002EA6ED = {
+			isa = PBXGroup;
+			children = (
+				676376502D0FD597002EA6ED /* ChurchApp */,
+				6763764F2D0FD597002EA6ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6763764F2D0FD597002EA6ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6763764E2D0FD597002EA6ED /* ChurchApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		676376502D0FD597002EA6ED /* ChurchApp */ = {
+			isa = PBXGroup;
+			children = (
+				67F8F10D2D0FE95700138237 /* Other */,
+				67F8F10C2D0FE94E00138237 /* Models */,
+				67F8F10B2D0FE94000138237 /* ViewModels */,
+				67F8F10A2D0FE93800138237 /* Views */,
+				676376572D0FD59B002EA6ED /* Preview Content */,
+			);
+			path = ChurchApp;
+			sourceTree = "<group>";
+		};
+		676376572D0FD59B002EA6ED /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				676376582D0FD59B002EA6ED /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		67F8F10A2D0FE93800138237 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				676376532D0FD597002EA6ED /* ContentView.swift */,
+				67F8F10E2D0FEB7300138237 /* ProfileView.swift */,
+				67F8F1102D0FEC2800138237 /* NewItemView.swift */,
+				670B739A2D11976900126416 /* LoginView.swift */,
+				670B739C2D11979100126416 /* HeaderView.swift */,
+				67B1F3422D121EA800D3BEFB /* RegisterView.swift */,
+				678A7B1E2D13150700776D6F /* ProfileButton.swift */,
+				679AFD3F2D149FEE0091E038 /* PrayListView.swift */,
+				67B1AB702D150FC0006D6D41 /* PrayListItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67F8F10B2D0FE94000138237 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				67F8F1162D0FED8000138237 /* ProfileViewModel.swift */,
+				67E0A3722D13D40200B3B72D /* LoginViewModel.swift */,
+				679079B32D145A860051E593 /* RegisterViewModel.swift */,
+				679AFD3B2D149AD70091E038 /* MainViewModel.swift */,
+				679AFD412D14BFB30091E038 /* PrayListViewModel.swift */,
+				67B1AB6E2D150D6E006D6D41 /* PrayListItemViewModel.swift */,
+				67B1AB722D15189B006D6D41 /* NewItemViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		67F8F10C2D0FE94E00138237 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67F8F1122D0FED2400138237 /* User.swift */,
+				67F8F1142D0FED3800138237 /* PrayListItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67F8F10D2D0FE95700138237 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				676376552D0FD59B002EA6ED /* Assets.xcassets */,
+				676376512D0FD597002EA6ED /* ChurchAppApp.swift */,
+				676376662D0FDB3B002EA6ED /* GoogleService-Info.plist */,
+				679AFD392D1496C70091E038 /* Extensions.swift */,
+				67A3F9012D16177B00C0A458 /* Launch Screen.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6763764D2D0FD597002EA6ED /* ChurchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6763765C2D0FD59B002EA6ED /* Build configuration list for PBXNativeTarget "ChurchApp" */;
+			buildPhases = (
+				6763764A2D0FD597002EA6ED /* Sources */,
+				6763764B2D0FD597002EA6ED /* Frameworks */,
+				6763764C2D0FD597002EA6ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChurchApp;
+			packageProductDependencies = (
+				67E0A36C2D138D7B00B3B72D /* FirebaseAuth */,
+				67E0A36E2D138D7B00B3B72D /* FirebaseFirestore */,
+				67E0A3702D138D7B00B3B72D /* FirebaseFirestoreSwift */,
+			);
+			productName = ChurchApp;
+			productReference = 6763764E2D0FD597002EA6ED /* ChurchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		676376462D0FD597002EA6ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					6763764D2D0FD597002EA6ED = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 676376492D0FD597002EA6ED /* Build configuration list for PBXProject "ChurchApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 676376452D0FD597002EA6ED;
+			packageReferences = (
+				67E0A36B2D138D7B00B3B72D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 6763764F2D0FD597002EA6ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6763764D2D0FD597002EA6ED /* ChurchApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6763764C2D0FD597002EA6ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				676376592D0FD59B002EA6ED /* Preview Assets.xcassets in Resources */,
+				676376562D0FD59B002EA6ED /* Assets.xcassets in Resources */,
+				67A3F9022D16177B00C0A458 /* Launch Screen.storyboard in Resources */,
+				676376672D0FDB3C002EA6ED /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6763764A2D0FD597002EA6ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				679AFD402D149FEE0091E038 /* PrayListView.swift in Sources */,
+				67F8F1112D0FEC2800138237 /* NewItemView.swift in Sources */,
+				67B1AB732D15189B006D6D41 /* NewItemViewModel.swift in Sources */,
+				67B1AB712D150FC0006D6D41 /* PrayListItemView.swift in Sources */,
+				67B1F3432D121EA900D3BEFB /* RegisterView.swift in Sources */,
+				67B1AB6F2D150D6E006D6D41 /* PrayListItemViewModel.swift in Sources */,
+				670B739D2D11979100126416 /* HeaderView.swift in Sources */,
+				678A7B1F2D13150700776D6F /* ProfileButton.swift in Sources */,
+				676376542D0FD597002EA6ED /* ContentView.swift in Sources */,
+				679AFD3C2D149AD70091E038 /* MainViewModel.swift in Sources */,
+				67F8F1152D0FED3800138237 /* PrayListItem.swift in Sources */,
+				67F8F10F2D0FEB7300138237 /* ProfileView.swift in Sources */,
+				67F8F1132D0FED2400138237 /* User.swift in Sources */,
+				679AFD422D14BFB30091E038 /* PrayListViewModel.swift in Sources */,
+				679079B42D145A860051E593 /* RegisterViewModel.swift in Sources */,
+				67E0A3732D13D40200B3B72D /* LoginViewModel.swift in Sources */,
+				676376522D0FD597002EA6ED /* ChurchAppApp.swift in Sources */,
+				670B739B2D11976900126416 /* LoginView.swift in Sources */,
+				67F8F1172D0FED8000138237 /* ProfileViewModel.swift in Sources */,
+				679AFD3A2D1496C70091E038 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6763765A2D0FD59B002EA6ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6763765B2D0FD59B002EA6ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6763765D2D0FD59B002EA6ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChurchApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ChurchApp;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ndiaye.ChurchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6763765E2D0FD59B002EA6ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChurchApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ChurchApp;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ndiaye.ChurchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		676376492D0FD597002EA6ED /* Build configuration list for PBXProject "ChurchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6763765A2D0FD59B002EA6ED /* Debug */,
+				6763765B2D0FD59B002EA6ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6763765C2D0FD59B002EA6ED /* Build configuration list for PBXNativeTarget "ChurchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6763765D2D0FD59B002EA6ED /* Debug */,
+				6763765E2D0FD59B002EA6ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		67E0A36B2D138D7B00B3B72D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		67E0A36C2D138D7B00B3B72D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67E0A36B2D138D7B00B3B72D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		67E0A36E2D138D7B00B3B72D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67E0A36B2D138D7B00B3B72D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		67E0A3702D138D7B00B3B72D /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 67E0A36B2D138D7B00B3B72D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 676376462D0FD597002EA6ED /* Project object */;
+}
