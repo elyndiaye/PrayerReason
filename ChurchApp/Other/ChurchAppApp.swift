@@ -15,6 +15,9 @@ struct ChurchAppApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
+                .onAppear {
+                    UIApplication.shared.applicationIconBadgeNumber = 0
+                }
         }
     }
 }
