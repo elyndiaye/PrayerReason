@@ -24,12 +24,13 @@ struct NewItemView: View {
                 TextField("Pedido de oração", text: $viewModel.title)
                 //Due Date
                 DatePicker("Data", selection: $viewModel.dueDate)
-                    .datePickerStyle(GraphicalDatePickerStyle())
+                    .datePickerStyle(CompactDatePickerStyle())
                 //Button
                 ProfileButton(title: "Adicionar",
                               background: .pink) {
                     if viewModel.canSave{
                         viewModel.save()
+                        NotificationManager.instance.sheduleNotification(prayReason: viewModel.title, dueDate: viewModel.dueDate)
                         newItemPresented = false
                     }
                     else {
@@ -51,7 +52,6 @@ struct NewItemView_Previews: PreviewProvider {
         NewItemView( newItemPresented: Binding(get: {
             return true
         }, set: { _ in
-            
         }))
     }
 }

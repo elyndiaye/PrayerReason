@@ -37,7 +37,6 @@ struct PrayListView: View {
             .navigationTitle("Pedidos de oração")
             .toolbar {
                 Button {
-                    NotificationManager.instance.sheduleNotification()
                     viewModel.showingNewItemView = true
                 } label: {
                     Image(systemName: "plus")

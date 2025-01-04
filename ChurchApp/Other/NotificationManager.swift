@@ -22,27 +22,24 @@ class NotificationManager {
         }
     }
     
-    func sheduleNotification() {
+    func sheduleNotification(prayReason: String, dueDate: Date) {
         let content = UNMutableNotificationContent()
         content.title = "Motivo de Oração"
-        content.subtitle = "Teste teste"
+        content.subtitle = prayReason
         content.sound = .default
         content.badge = 1
         
-        //using time
-        //comentar
-       // let triger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+
         
         //calendar
-        var dateComponents = DateComponents()
-        dateComponents.hour = 03
-        dateComponents.minute = 22
-        //remover o comentario
+        let calendar = Calendar.current
+        guard let notificationDate = calendar.date(byAdding: .minute, value: 10, to: dueDate) else {
+                    print("Erro ao adicionar minutos à data")
+                    return
+                }
+        let dateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute], from: notificationDate)
+    
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
-        
-        //location
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request)
         
     }
 }
